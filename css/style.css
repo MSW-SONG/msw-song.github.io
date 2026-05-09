@@ -222,77 +222,12 @@ a:hover {
     gap: 26px;
 }
 
-.research-hero,
 .research-group {
+    padding: 24px;
     background: rgba(255, 255, 255, 0.88);
     border: 1px solid var(--surface-border);
     border-radius: 22px;
     box-shadow: var(--surface-shadow);
-}
-
-.research-hero {
-    padding: 28px;
-    background:
-        radial-gradient(circle at 12% 0%, rgba(24, 144, 214, 0.16), transparent 34%),
-        linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(237, 246, 253, 0.96));
-}
-
-.research-kicker {
-    display: inline-flex;
-    align-items: center;
-    padding: 6px 12px;
-    border-radius: 999px;
-    background: rgba(24, 144, 214, 0.12);
-    color: var(--secondary-color);
-    font-size: 0.84rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    margin-bottom: 14px;
-}
-
-.research-hero h2,
-.research-group-head h2 {
-    font-family: "Songti SC", "STSong", "Noto Serif SC", serif;
-    color: var(--primary-color);
-    letter-spacing: 0.02em;
-}
-
-.research-hero h2 {
-    font-size: clamp(1.6rem, 3vw, 2.35rem);
-    margin-bottom: 12px;
-}
-
-.research-intro {
-    margin-top: 0;
-    line-height: 1.9;
-    text-indent: 0;
-    color: #395463;
-    max-width: 920px;
-}
-
-.research-hero-actions {
-    margin-top: 18px;
-}
-
-.research-scholar-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 11px 18px;
-    border-radius: 999px;
-    background: linear-gradient(135deg, #1890d6, #1565c0);
-    color: #fff;
-    font-weight: 700;
-    box-shadow: 0 10px 22px rgba(13, 71, 161, 0.22);
-}
-
-.research-scholar-link:hover {
-    color: #fff;
-    background: linear-gradient(135deg, #1565c0, #0d47a1);
-}
-
-.research-group {
-    padding: 24px;
 }
 
 .research-group + .research-group {
@@ -322,6 +257,9 @@ a:hover {
 }
 
 .research-group-head h2 {
+    font-family: "Songti SC", "STSong", "Noto Serif SC", serif;
+    color: var(--primary-color);
+    letter-spacing: 0.02em;
     font-size: clamp(1.35rem, 2.2vw, 1.8rem);
     margin-top: 2px;
 }
@@ -1510,7 +1448,6 @@ a {
         font-size: 0.88rem;
     }
 
-    .research-hero,
     .research-group {
         padding: 20px;
     }
