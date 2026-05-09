@@ -354,6 +354,26 @@ a:hover {
     font-size: 0.95rem;
 }
 
+.research-card-link-wrap {
+    margin: 0;
+    padding-top: 4px;
+}
+
+.research-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--group-accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.research-card-link:hover {
+    color: var(--secondary-color);
+}
+
 .research-card:hover {
     transform: translateY(-4px);
     border-color: rgba(24, 144, 214, 0.36);
