@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const revealTargets = document.querySelectorAll(
-        '.about-section .container, .contact-section .container, .about-page-section .container, .research-section .container, .contact-page-section .container, .news-title-item, .news-item, .direction-card, .team-member, .product-card, .equipment-card, .news-entry, .news-article, .paper-list li'
+        '.about-section .container, .contact-section .container, .about-page-section .container, .research-section .container, .contact-page-section .container, .news-title-item, .news-item, .direction-card, .team-member, .product-card, .equipment-card, .news-entry, .news-article, .paper-list li, .team-detail-section .team-detail-card, .team-detail-section .detail-paragraph, .team-detail-section .detail-chip'
     );
 
     revealTargets.forEach((element, index) => {
