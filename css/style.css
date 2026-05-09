@@ -212,6 +212,82 @@ a:hover {
     color: var(--accent-color);
 }
 
+.about-section .container p,
+.about-page-section .container p,
+.research-section .container > p,
+.contact-page-section .container > p,
+.news-article > p:not(.news-meta):not(.news-back-link) {
+    line-height: 1.92;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.about-page-section ol {
+    list-style: none;
+    counter-reset: research-direction;
+    padding-left: 0;
+    margin-top: 10px;
+    display: grid;
+    gap: 14px;
+}
+
+.about-page-section ol li {
+    position: relative;
+    padding: 18px 18px 18px 64px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid var(--surface-border);
+    box-shadow: var(--surface-shadow);
+    line-height: 1.88;
+    text-align: justify;
+}
+
+.about-page-section ol li::before {
+    counter-increment: research-direction;
+    content: counter(research-direction);
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #1890d6, #0d47a1);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.92rem;
+}
+
+.about-page-section ol li strong {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--primary-color);
+    font-size: 1.06rem;
+}
+
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    display: grid;
+    gap: 12px;
+}
+
+.contact-list li {
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid var(--surface-border);
+    border-left: 4px solid rgba(24, 144, 214, 0.72);
+    box-shadow: var(--surface-shadow);
+    line-height: 1.85;
+}
+
+.contact-list strong {
+    color: var(--primary-color);
+}
+
 /* 研究方向样式 */
 .directions {
     display: grid;
@@ -925,6 +1001,7 @@ a {
 .about-page-section .container,
 .research-section .container,
 .contact-page-section .container {
+    max-width: 980px;
     background: var(--surface-color);
     border: 1px solid var(--surface-border);
     border-radius: 16px;
@@ -1066,6 +1143,8 @@ a {
 }
 
 .news-article {
+    max-width: 980px;
+    margin: 0 auto;
     padding: 32px;
 }
 
