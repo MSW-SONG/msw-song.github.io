@@ -759,6 +759,121 @@ a:hover {
     height: 100%;
 }
 
+/* 科研团队页：导师左图右文（不跳转二级页） */
+.team-mentor-panel {
+    display: grid;
+    grid-template-columns: minmax(220px, 280px) 1fr;
+    gap: clamp(22px, 4vw, 40px);
+    align-items: start;
+    padding: clamp(22px, 3vw, 32px);
+    background: var(--surface-color);
+    border: 1px solid var(--surface-border);
+    border-radius: 22px;
+    box-shadow: var(--surface-shadow);
+    border-left: 5px solid var(--secondary-color);
+}
+
+.team-mentor-photo-wrap {
+    margin: 0;
+    position: relative;
+}
+
+.team-mentor-photo {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 18px;
+    background: linear-gradient(145deg, rgba(24, 144, 214, 0.12), rgba(13, 71, 161, 0.08));
+    box-shadow: 0 16px 36px rgba(13, 71, 161, 0.16);
+}
+
+.team-mentor-body {
+    min-width: 0;
+}
+
+.team-mentor-kicker {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 12px;
+    margin: 0 0 12px;
+    border-radius: 999px;
+    background: rgba(24, 144, 214, 0.12);
+    color: var(--secondary-color);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.team-mentor-name {
+    font-family: "Songti SC", "STSong", "Noto Serif SC", serif;
+    font-size: clamp(1.65rem, 3vw, 2.25rem);
+    line-height: 1.2;
+    margin: 0 0 8px;
+    color: var(--primary-color);
+    letter-spacing: 0.02em;
+}
+
+.team-mentor-name-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.team-mentor-inline-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: rgba(24, 144, 214, 0.12);
+    color: var(--secondary-color);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1;
+}
+
+.team-mentor-role {
+    margin: 0 0 16px;
+    font-size: 1.05rem;
+    color: #4a6270;
+    font-weight: 600;
+}
+
+.team-mentor-chips {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.team-mentor-chips li {
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    background: rgba(13, 71, 161, 0.06);
+    border: 1px solid rgba(13, 71, 161, 0.12);
+}
+
+.team-mentor-text {
+    display: grid;
+    gap: 14px;
+}
+
+.team-mentor-text p {
+    margin: 0;
+    line-height: 1.82;
+    color: var(--text-color);
+    text-align: justify;
+}
+
 .team-detail-section {
     padding-top: 40px;
 }
@@ -1467,6 +1582,21 @@ a {
 
     .team-member p {
         font-size: 0.88rem;
+    }
+
+    .team-mentor-panel {
+        grid-template-columns: 1fr;
+        padding: 20px 18px;
+    }
+
+    .team-mentor-photo-wrap {
+        max-width: 260px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .team-mentor-body {
+        width: 100%;
     }
 
     .research-group {

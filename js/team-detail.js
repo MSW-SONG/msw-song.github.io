@@ -1,18 +1,6 @@
 const fallbackPhoto = 'images/avatar.png';
 
 const teamMembers = {
-    'song-liyan': {
-        groupLabel: '导师',
-        name: '宋立岩',
-        subtitle: '研究员，博士生导师',
-        photo: 'images/team/liyan.png',
-        chips: ['资源与环境专业硕士学位点负责人', '生态学学位评定分委员会委员', '固体废物处置与资源化'],
-        paragraphs: [
-            `宋立岩，男，1975年生于山东龙口，安徽大学资源与环境工程学院研究员、博士生导师，资源与环境专业硕士学位点负责人，生态学学位评定分委员会委员；同时担任加拿大 Dalhousie University 兼职教授和巴塞尔公约亚太区域中心化学品和废物管理智库专家。`,
-            `他先后在同济大学、美国密歇根州立大学和密歇根大学接受环境工程与环境科学训练，曾任中国科学院重庆绿色智能技术研究院研究员及环境微生物与生态研究中心主任。`,
-            `长期从事固体废物处置与资源化研究，主持国家自然科学基金面上项目、中科院 STS 区域重点项目及安徽省科技重大专项等多项项目，发表学术论文 108 篇，获中国发明专利 5 项、国际发明专利 1 项。`
-        ]
-    },
     'nadia-sarwar': {
         groupLabel: '在校硕博',
         name: 'Nadia Sarwar',
@@ -332,7 +320,11 @@ function renderTeamDetailPage() {
     }
 
     const params = new URLSearchParams(window.location.search);
-    const memberId = params.get('person') || 'song-liyan';
+    const memberId = params.get('person');
+    if (!memberId || memberId === 'song-liyan') {
+        window.location.replace(memberId === 'song-liyan' ? 'team.html#mentor' : 'team.html');
+        return;
+    }
     const member = teamMembers[memberId];
     const breadcrumb = document.querySelector('[data-detail-breadcrumb]');
 
