@@ -1,5 +1,14 @@
 // 简单脚本：如果需要轮播图可在 slides 数组中添加图片路径
 document.addEventListener('DOMContentLoaded', function () {
+    const footerMarkup = `
+        <div>版权所有 © 2025 宋立岩教授课题组 | 保留所有权利</div>
+        <div>网站名称：科研成果介绍 | 备案号：<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">鲁ICP备2026025607号-1</a> | 域名：msw-song.com | 首页：<a href="https://www.msw-song.com" target="_blank" rel="noopener noreferrer">www.msw-song.com</a></div>
+    `;
+
+    document.querySelectorAll('.copyright').forEach((element) => {
+        element.innerHTML = footerMarkup;
+    });
+
     const hero = document.querySelector('.hero');
     if (hero) {
         const slides = ['images/hero1.png'];

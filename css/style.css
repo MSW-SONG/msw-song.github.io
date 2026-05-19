@@ -569,6 +569,9 @@ a:hover {
     text-align: center;
     margin-top: 20px;
     font-size: 0.85rem;
+    display: grid;
+    gap: 4px;
+    line-height: 1.6;
 }
 
 /* 页眉标题和面包屑 */
@@ -1494,6 +1497,16 @@ a {
 .copyright {
     margin-top: 30px;
     opacity: 0.88;
+}
+
+.copyright a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.copyright a:hover {
+    color: var(--accent-color);
 }
 
 .reveal-on-scroll {
