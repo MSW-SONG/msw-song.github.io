@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
         element.style.transitionDelay = `${Math.min((index % 8) * 60, 360)}ms`;
     });
 
+    document.querySelectorAll('.news-detail-section .news-article').forEach((element) => {
+        element.classList.add('is-visible');
+    });
+
     if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver(
             (entries) => {
