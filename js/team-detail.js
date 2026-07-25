@@ -73,7 +73,7 @@ const teamMembers = {
     'hong-wenqing': {
         groupLabel: '毕业生',
         name: '洪文清',
-        subtitle: '2023届硕士研究生',
+        subtitle: '2026届硕士研究生',
         photo: 'images/team/hong-wenqing.png',
         chips: ['硕士论文《垃圾填埋场抗性组特征分析》', '现就职于滁州学院', '一作发表 SCI 论文 3 篇'],
         paragraphs: [
@@ -82,9 +82,9 @@ const teamMembers = {
         ]
     },
     'sun-anyi': {
-        groupLabel: '在校硕博',
+        groupLabel: '毕业生',
         name: '孙安逸',
-        subtitle: '2023级硕士研究生',
+        subtitle: '2026硕士研究生',
         photo: 'images/team/sun-anyi.png',
         chips: ['硕士学位论文《病毒介导的垃圾填埋场中微生物磷、硫与甲烷循环的机制研究》', 'SCI 论文 1 篇', '填埋场病毒研究'],
         paragraphs: [
@@ -104,9 +104,9 @@ const teamMembers = {
         ]
     },
     'zheng-zihao': {
-        groupLabel: '在校硕博',
+        groupLabel: '毕业生',
         name: '郑子豪',
-        subtitle: '2023级硕士研究生',
+        subtitle: '2026届硕士研究生',
         photo: 'images/team/zheng-zihao.png',
         chips: ['硕士学位论文《噬菌体介导的垃圾填埋场微生物氮循环与抗生素抗性基因传播的机制研究》', 'SCI 论文 2 篇', '预计 2026 年 9 月攻读博士学位'],
         paragraphs: [
