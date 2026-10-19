@@ -40,7 +40,7 @@ const teamMembers = {
     'yao-yuping': {
         groupLabel: '在校硕博',
         name: '姚钰萍',
-        subtitle: '2023级博士研究生',
+        subtitle: '博士研究生',
         photo: 'images/team/yao-yuping.jpg',
         chips: ['生态学专业', '环境微生物组', '微生物碳循环'],
         paragraphs: [
@@ -49,13 +49,13 @@ const teamMembers = {
         ]
     },
     'he-yefan': {
-        groupLabel: '毕业生',
+        groupLabel: '在校硕博',
         name: '何也凡',
-        subtitle: '2025届博士研究生',
+        subtitle: '博士研究生',
         photo: 'images/team/he-yefan.jpg',
         chips: ['环境工程专业', '原生生物调控', '抗生素抗性基因'],
         paragraphs: [
-            `何也凡，女，1999年生于安徽安庆，安徽大学资源与环境工程学院环境工程专业 2025 届博士研究生。`,
+            `何也凡，女，1999年生于安徽安庆，现为安徽大学资源与环境工程学院环境工程专业 2025 级博士研究生。`,
             `她的研究聚焦原生生物调控的填埋场抗生素抗性基因传播机制。`
         ]
     },
